@@ -17,41 +17,45 @@
 </head>
 <body>
   <header>
+    <h1 id="header">AutoMuteUsを使ってAmongUsをプレイしよう</h1>
     <h1><img src="auto01.jpeg" alt="amongus"width="1024" height="237"></h1>
-  <h1>AutoMuteUsを使ってAmongUsをプレイしよう</h1>
   </header>
   <p>ゲームサークルあもあす班のみなさんこんにちは．<strong>あさあさ</strong>です</p>
-  <p>ここではCITゲームサークル生向けにAutoMuteUsというBotとAmongUsCaptureというソフトウェアを用いてDiscordのボイスチャットで快適にAmong Usをプレイする方法を解説します．</p>
+  <p>ここではCITゲームサークル生向けにAutoMuteUsというBotとAmongUsCapture(以下，capture)というソフトウェアを用いてDiscordのボイスチャットで快適にAmong Usをプレイする方法を解説します．</p>
   <h2>AutoMuteUsについて</h2>
   <p>Among Usはみなさん楽しんでいますか？とても楽しいゲームですが，オンラインでやるときは手動でミュートしたり死亡したら霊界チャットに移動しなきゃいけなかったり面倒ですよね．</p>
   <p>そんな面倒な作業を自動でやってくれるBotがあります！それが<strong>AutoMuteUs</strong>です．読んで字の通り，このBotはゲームが始まったら参加者をミュート状態にして，会議とタスクで生者チャットと霊界チャットを切り替えてくれます．このサイトではそんなAutoMuteUsの使い方をご紹介します．</p>
-  <h2>AmongUsCaptureのインストール</h2>
+  <h2>Captureのインストール</h2>
   <p>実際のゲーム内の状況をBotに伝えるために橋渡しとなるソフトウェアを
     <a href="https://github.com/automuteus/amonguscapture/releases">こちら</a>
     からインストールします．
   </p>
   <img src="auto03.png" alt="github"width="1024" height="314">
-  <p>上記のGithubからAmongUsCaptureの最新版のzipファイルをダウンロードしてください．</p>
-  <h2>AmongUsCaptureの起動と部屋募集</h2>
-  <p>ここまでの手順でAmongUsCaptureをインストールできたら準備完了です．さっそくホストとして部屋を立ててみましょう</p>
+  <p>上記のGithubからCaptureの最新版のzipファイルをダウンロードしてください．</p>
+  <h2>Captureの起動と部屋募集</h2>
+  <p>ここまでの手順でCaptureをインストールできたら準備完了です．さっそくホストとして部屋を立ててみましょう</p>
   <h3>コマンドでBotを起動する</h3>
   <p>ここからはDiscordで操作します．VCに入った状態で，任意のテキストチャンネルに以下のコマンドを入力します．(一応「automuteus」チャンネルがあるのでそこに入れましょう)</p>
   <h4>/new</h4>
-  <img src="auto04.png" alt="new"width="512" heignt="323">
-  <h3>AmongUsCaptureとの同期</h3>
-  <img src="auto05.png" alt="auto"width="512" heignt="456">
-  <p>コマンドを入力すると上の写真のようなコメントがBotから送られます．この状態は「BotとAmongUsCaptureがまだ連携できてないよ」ということです．同期するためには，赤枠で囲ってある"here"をクリックしましょう．ブラウザーが起動し，画面にでっかく"AutoMuteUs"のロゴが出てきたら成功です．</p>
+  <img src="auto04.png" alt="new"width="612" height="423">
+  <h3>Captureとの同期</h3>
+  <img src="auto05.png" alt="auto"width="512" height="456">
+  <p>コマンドを入力すると上の写真のようなコメントがBotから送られます．この状態は「BotとCaptureがまだ連携できてないよ」ということです．同期するためには，赤枠で囲ってある"here"をクリックしましょう．ブラウザーが起動し，画面にでっかく"AutoMuteUs"のロゴが出てきたら成功です．</p>
+  <img src="auto09.png" alt="hyouzi"width="631" height="368">
+  <p>(このロゴが画面いっぱいに表示されます．)</p>
   <h4>注意点</h4>
   <p>Discordに写真のような表示が出てこない場合，以下の点に注意しましょう．</p>
   <ul>
     <li>VCに入っていない</li>
     <li>コマンドラインが間違っている("au.n"は間違い)</li>
   </ul>
-  <p>"here"をクリックしてもAmongUsCaptureが起動しない場合，以下の点に注意しましょう．</p>
-  <ul>
-    <li>インストールしたAmongUsCaptureがダウンロードに置きっぱなしになっている(手動で起動するか，デスクトップに移動してから行いましょう)</li>
-  </ul>
-  
-  
+  <h3>Captureが起動しない場合の対処法</h3>
+  <p>URLをクリックしてもcaptureが起動しない場合，captureがデスクトップにないことが原因と考えられます．ダウンロードに置きっぱなしの場合は場所を移動させましょう．</p>
+  <p>それでもだめな場合はおそらくPCのセキュリティソフトが阻害している可能性があります．この場合は手動で起動させましょう．単純にダブルクリックすれば起動できます．captureはネットからインストールしたソフトウェアなので，セキュリティソフトが反応してしまうことがあります．</p>
+  <img src="auto07.png" alt="hyouzi"width="547" height="815">
+  <p>同期がうまく行けば，上の写真の赤枠のように緑丸がつきます．PCのスペックによっては数秒ラグがあるのでちょっと待ちましょう．</p>
+  <p>この状態でAmong Usを起動し，ゲーム内で部屋を立ててみましょう！ここまでうまく行っていれば，最初にDiscordに送られたコメントが下の写真のように変化します．</p>
+  <img src="auto10.png" alt="hyouzi"width="547" height="815">
+  <p>これで部屋募集ができました！</p>
 </body>
 </html>
