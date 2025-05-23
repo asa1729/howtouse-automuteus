@@ -45,3 +45,9 @@ table{
   border-collapse : collapse ;
   margin-bottom : 30px ;
 }
+#ok{
+  color : #d7031d ;
+}
+#no{
+  color : #1A4472 ;
+}
