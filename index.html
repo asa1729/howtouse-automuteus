@@ -20,7 +20,6 @@
   <header>
     <h1><img src="asaasa.jpeg" alt="amongus"width=12.5% height="width"></h1>
     <h1 id="header">AutoMuteUsを使ってAmongUsをプレイしよう</h1>
-    <h1>デバック用：5</h1>
   </header>
   <p>
     ゲームサークルあもあす班のみなさんこんにちは．<strong>あさあさ</strong>です
@@ -28,11 +27,15 @@
   <p>
     ここではCITゲームサークル生向けにAutoMuteUsというBotとAmongUsCapture(以下，Capture)というソフトウェアを用いて部屋募集する方法と，できた部屋への入り方を解説します．
   </p>
+  <p>
+    <small>webページを作る経験が浅いので見づらかったらごめんなさい．</small>
+  </p>
   <h2>目次</h2>
   <nav>
     <ol>
     <li><a href="#section1">AutoMuteUsについて</a></li>
     <ul>
+      <li>始める前に必要なもの</li>
       <li>もしAutoMuteUsを招待しようとしていたら</li>
       <li>AutoMuteUsの権限について</li>
     </ul>
@@ -61,6 +64,42 @@
     そんな面倒な作業を自動でやってくれるBotがあります！それが<strong>AutoMuteUs</strong>です．読んで字の通り，このBotはゲームが始まったら参加者をミュート状態にして，会議とタスクで生者チャットと霊界チャットを切り替えてくれます．このサイトではそんなAutoMuteUsの使い方をご紹介します．
   </p>
   <h3 id="taisyo">
+    始める前に必要なもの
+  </h3>
+  <p>
+    今回解説するやり方はWindows11での実行方法です．また，PC版のAmongUsでのみBot連携が可能になりますが，<strong>購入するストアによっては対応していなバージョンもあるので注意しましょう．</strong>下の表にAutoMuteUsが対応しているストアをまとめておきます．それと，スマホやスイッチ版ではこの方法で部屋募集できません．
+  </p>
+  <table>
+    <tr>
+      <td>ストア名</td>
+      <td>対応</td>
+    </tr>
+    <tr>
+      <td>Steam</td>
+      <td>OK</td>
+    </tr>
+    <tr>
+      <td>Epic Games</td>
+      <td>OK</td>
+    </tr>
+    <tr>
+      <td>Itch.io</td>
+      <td>OK</td>
+    </tr>
+    <tr>
+      <td>Microsoft Store</td>
+      <td>OK</td>
+    </tr>
+    <tr>
+      <td>Craked</td>
+      <td>NO</td>
+    </tr>
+    <tr>
+      <td>Beta</td>
+      <td>NO</td>
+    </tr>
+  </table>
+  <h3 id="taisyo">
     もしAutoMuteUsを招待しようとしていたら
   </h3>
   <p>
@@ -88,7 +127,10 @@
     NETのインストール
   </h3>
   <p>
-    回答したファイルを実行すると，<strong>「NETが見つからなかった！」</strong>というメッセージが現れ，ダウンロード画面になります．画面の誘導に従い，<strong>.NET 5.0.17</strong>をインストールしましょう．
+    解凍したファイルを実行すると，<strong>「NETが見つからなかった！」</strong>というメッセージが現れ，ダウンロード画面になります．画面の誘導に従い，<strong>.NET 5.0.17</strong>をインストールしましょう．
+  </p>
+  <p>
+    Capture制作者のREADME.mdにはバージョン5.0.1をダウンロードするよう書かれていますが，どうやら5.0.17が正しいようです．<small>ここらへん詳しくないからわかんね</small>
   </p>
   <h2 id="section3">
     Captureの起動
@@ -100,7 +142,7 @@
     コマンドでBotを起動する
   </h3>
   <p>
-    ここからはDiscordで操作します．VCに入った状態で，任意のテキストチャンネルに<strong>"/new"</strong>と入力します．(一応「automuteus」チャンネルがあるのでそこに入れましょう)
+    <strong>ここからはDiscordで操作します．</strong>VCに入った状態で，任意のテキストチャンネルに<strong>"/new"</strong>と入力します．(一応「automuteus」チャンネルがあるのでそこに入れましょう)
   </p>
   <h4>/new</h4>
   <img src="auto04.png" alt="コマンドラインの説明"width="612" height="423">
@@ -130,7 +172,7 @@
     URLをクリックしてもcaptureが起動しない場合，<strong>Captureがデスクトップにないことが原因と考えられます．</strong>ダウンロードに置きっぱなしの場合は場所を移動させましょう．
   </p>
   <p>
-    それでもだめな場合はおそらくPCのセキュリティソフトが阻害している可能性があります．<strong>この場合は手動で起動させましょう．</strong>単純にダブルクリックすれば起動できます．Captureはネットからインストールしたソフトウェアなので，セキュリティソフトが反応してしまうことがあります．
+    それでもだめな場合は<strong>手動で起動させましょう．</strong>単純にダブルクリックすれば起動できます．<strong>起動できたら先程の"here"をクリックすると同期できるはずです．</strong>
   </p>
   <h3>
     captureとの同期(つづき)
@@ -154,7 +196,7 @@
   </p>
   <img src="auto13.png" alt="hyouzi"width="447" height="715">
   <p>
-    上図の赤枠の場所をクリックすると，ホスト名とルームコードを入力する欄が出てきます．ホスト名はAmongUs内で使用している名前を入力しましょう．
+    上図の赤枠の場所をクリックすると，ホスト名とルームコードを入力する欄が出てきます．<strong>ホスト名はAmongUs内で使用している名前を入力しましょう．</strong>
   </p>
   <h2 id="section4">
     部屋への参加方法
